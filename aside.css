@@ -1,0 +1,27 @@
+/* aside-container */
+.left-column .aside-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+/* aside */
+.aside-container .aside {
+    margin: 72px 4px 0px;
+    text-align: center;
+}
+
+/* aside-image */
+.aside .aside-image {
+    display: inline;
+    width: 244px;
+    height: 244px;
+}
+
+/* aside-text */
+.aside .aside-text {
+    display: block;
+    font-size: 16px;
+    font-weight: 300;
+}

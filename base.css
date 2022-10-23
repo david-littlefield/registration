@@ -1,0 +1,212 @@
+/* body */
+body {
+    background: #ffffff;
+    color: #202124;
+    direction: ltr;
+    font-family: roboto, "Noto Sans Myanmar UI", arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.4286;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* div */
+div {
+    display: block;
+    margin: 0px;
+}
+
+/* input */
+input {
+    color: #202124;
+    font-family: roboto, "Noto Sans Myanmar UI", arial, sans-serif;
+}
+
+/* textarea */
+textarea {
+    color: #202124;
+    font-family: roboto, "Noto Sans Myanmar UI", arial, sans-serif;
+}
+
+/* select */
+select {
+    color: #202124;
+    font-family: roboto, "Noto Sans Myanmar UI", arial, sans-serif;
+}
+
+/* button */
+button {
+    color: #202124;
+    font-family: roboto, "Noto Sans Myanmar UI", arial, sans-serif;
+}
+
+/* a */
+a,
+a:visited {
+    color: #1a73e8;
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration: none;
+    outline: none;
+}
+
+/* h1 */
+h1 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    margin: 0px;
+}
+
+/* main-container */
+.main-container {
+    box-sizing: border-box;
+}
+
+@media (min-width: 601px) {
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        position: relative;
+    }
+}
+
+.main-container::before {
+    box-sizing: border-box;
+}
+
+@media (min-width: 601px) {
+    .main-container::before {
+        content: "";
+        display: block;
+        flex-grow: 1;
+        height: 24px;
+        min-height: 30px;
+    }
+}
+
+.main-container::after {
+    box-sizing: border-box;
+}
+
+@media (min-width: 601px) {
+    .main-container::after {
+        content: "";
+        display: block;
+        flex-grow: 1;
+        height: 24px;
+        min-height: 63.9999996px;
+    }
+}
+
+.main-container * {
+    box-sizing: inherit;
+}
+
+.main-container *::before {
+    box-sizing: inherit;
+}
+
+.main-container *::after {
+    box-sizing: inherit;
+}
+
+/* main-content */
+.main-container .main-content {
+    background: #fff;
+    flex-direction: column;
+    max-width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+@media (min-width: 601px) {
+    .main-container .main-content {
+        border-radius: 8px;
+        border: 1px solid #dadce0;
+        display: block;
+        flex-shrink: 0;
+        margin: 0px auto;
+        min-height: 0px;
+        transition: 0.2s;
+        width: 450px;
+    }
+}
+
+@media (min-width: 901px) {
+    .main-container .main-content {
+        width: 750px;
+    }
+}
+
+/* columns-container */
+.main-content .columns-container {
+    flex-grow: 1;
+    overflow: hidden;
+    padding: 24px 24px 36px;
+}
+
+@media (min-width: 450px) {
+    .main-content .columns-container {
+        padding: 48px 40px 36px;
+    }
+}
+
+@media (min-width: 601px) {
+    .main-content .columns-container {
+        height: auto;
+        min-height: 500px;
+        overflow-y: auto;
+        transition: 0.2s;
+    }
+}
+
+@media (min-width: 901px) {
+    .main-content .columns-container {
+        display: flex;
+    }
+}
+
+/* left-column */
+@media (min-width: 901px) {
+    .columns-container .left-column {
+        flex-basis: 450px;
+        margin: 0px -48px;
+        overflow: hidden;
+        padding: 0px 48px;
+    }
+}
+
+/* empty-container */
+.empty-container {
+    height: auto;
+    width: auto;
+}
+
+/* right-column */
+.columns-container .right-column {
+    display: none;
+}
+
+@media (min-width: 901px) {
+    .columns-container .right-column {
+        display: flex;
+        flex-shrink: 0;
+        padding-left: 48px;
+        width: 300px;
+    }
+}
+
+/* background */
+.main-container .background {
+    background: #ffffff;
+    bottom: 0px;
+    direction: ltr;
+    left: 0px;
+    overflow: hidden;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 1;
+}

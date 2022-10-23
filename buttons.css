@@ -1,0 +1,261 @@
+/* buttons-container */
+.form-container .buttons-container {
+    align-items: flex-start;
+    display: flex;
+    flex-grow: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: -8px;
+    margin-top: 26px;
+    min-height: 48px;
+    padding-bottom: 20px;
+}
+
+/* buttons-sub-scontainer */
+.buttons-container .buttons-sub-container {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/* right-button-container */
+.buttons-sub-container .right-button-container {
+    text-align: right;
+    flex-grow: 1;
+}
+
+/* right-button-sub-container */
+.right-button-container .right-button-sub-container {
+    display: inline-block;
+}
+
+/* next-button-container */
+.right-button-sub-container .next-button-container {
+    display: inline;
+}
+
+/* next-button */
+.next-button-container .next-button {
+    align-items: center;
+    background: transparent;
+    background-color: #1a73e8;
+    border-radius: 4px;
+    border: none;
+    box-shadow: none;
+    color: #ffffff;
+    display: inline-flex;
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
+    font-size: 17.5px;
+    font-weight: 500;
+    height: 36px;
+    justify-content: center;
+    letter-spacing: 0.1875px;
+    line-height: inherit;
+    margin-bottom: 6px;
+    margin-top: 6px;
+    min-width: 64px;
+    outline: none;
+    overflow: visible;
+    padding: 0px 24px 0px 24px;
+    position: relative;
+    text-decoration: none;
+    text-transform: none;
+    transition: border 280ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+    user-select: none;
+    vertical-align: middle;
+    will-change: transform, opacity;
+}
+
+.next-button-container .next-button:active {
+    box-shadow: 0px 1px 2px 0px rgba(60, 64, 67, 0.3), 0px 2px 6px 2px rgba(60, 64, 67, 0.15);
+    outline: none;
+}
+
+.next-button-container .next-button:hover {
+    box-shadow: 0px 1px 2px 0px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+    cursor: pointer;
+}
+
+/* next-button-background */
+.next-button .next-button-background {
+    border-radius: 4px;
+    bottom: 0px;
+    box-sizing: inherit;
+    height: 100%;
+    left: 0px;
+    overflow: hidden;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: 0;
+}
+
+.next-button .next-button-background::before {
+    background-color: #202124;
+    border-radius: 50%;
+    content: "";
+    height: 200%;
+    left: calc(50% - 100%);
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: calc(50% - 100%);
+    transition: opacity 15ms linear, background-color 15ms linear;
+    width: 200%;
+    z-index: 1;
+}
+
+.next-button .next-button-background::after {
+    background-color: #202124;
+    border-radius: 50%;
+    content: "";
+    height: 200%;
+    left: calc(50% - 100%);
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: calc(50% - 100%);
+    transition: opacity 150ms linear;
+    width: 200%;
+    z-index: 0;
+}
+
+.next-button:hover .next-button-background::before {
+    opacity: 0.16;
+}
+
+.next-button:focus .next-button-background::before {
+    transition-duration: 75ms;
+    opacity: 0.24;
+}
+
+.next-button:active .next-button-background::after {
+    transition-duration: 75ms;
+    opacity: 0.20;
+}
+
+/* button-text */
+.next-button .button-text {
+    position: relative;
+}
+
+/* left-button-container  */
+.buttons-sub-container .left-button-container {
+    flex-grow: 1;
+}
+
+/* left-button-sub-container */
+.left-button-container .left-button-sub-container {
+    display: inline-block;
+    text-align: left;
+}
+
+/* sign-in-button-container */
+.left-button-sub-container .sign-in-button-container {
+    display: inline;
+}
+
+/* sign-in-button */
+.sign-in-button-container .sign-in-button {
+    align-items: center;
+    background-color: transparent;
+    background: transparent;
+    border-radius: 4px;
+    border: none;
+    box-sizing: inherit;
+    color: #1a73e8;
+    display: inline-flex;
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
+    font-size: inherit;
+    font-weight: 500;
+    height: 36px;
+    justify-content: center;
+    letter-spacing: 0.15px;
+    line-height: inherit;
+    margin-bottom: 6px;
+    margin-top: 6px;
+    min-width: 0px;
+    outline: none;
+    overflow: visible;
+    padding: 0px 8px 0px 8px;
+    position: relative;
+    text-decoration: none;
+    text-transform: none;
+    vertical-align: middle;
+    will-change: transform, opacity;
+}
+
+.sign-in-button-container .sign-in-button:active {
+    color: #174ea6;
+    outline: none;
+}
+
+.sign-in-button-container .sign-in-button:hover {
+    color: #174ea6;
+    cursor: pointer;
+}
+
+.sign-in-button-container .sign-in-button:focus {
+    color: #174ea6;
+}
+
+/* sign-in-button-background */
+.sign-in-button .sign-in-button-background {
+    border-radius: 4px;
+    bottom: 0px;
+    box-sizing: inherit;
+    height: 100%;
+    left: 0px;
+    overflow: hidden;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: 0;
+}
+
+.sign-in-button .sign-in-button-background::before {
+    background-color: #1a73e8;
+    border-radius: 50%;
+    content: "";
+    height: 200%;
+    left: calc(50% - 100%);
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: calc(50% - 100%);
+    transition: opacity 15ms linear, background-color 15ms linear;
+    width: 200%;
+    z-index: 1;
+}
+
+.sign-in-button .sign-in-button-background::after {
+    background-color: #1a73e8;
+    border-radius: 50%;
+    content: "";
+    height: 200%;
+    left: calc(50% - 100%);
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: calc(50% - 100%);
+    transition: opacity 150ms linear;
+    width: 200%;
+    z-index: 0;
+}
+
+.sign-in-button:hover .sign-in-button-background::before {
+    opacity: 0.04;
+}
+
+.sign-in-button:focus .sign-in-button-background::before { /* <-- not sure where this came from in css */
+    opacity: 0.12;
+    transition-duration: 75ms;
+}
+
+.sign-in-button:active .sign-in-button-background::after { /* <-- not sure where this came from in css */
+    opacity: 0.12;
+    transition-duration: 75ms;
+}

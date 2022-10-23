@@ -1,0 +1,91 @@
+/* card */
+.left-column .card {
+    margin: auto -24px;
+    overflow: hidden;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+@media (min-width: 450px) {
+    .left-column .card {
+        margin: auto -40px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+/* card-header */
+.card .card-header {
+    text-align: left;
+}
+
+/* card-header-text */
+.card-header .card-header-text {
+    color: #202124;
+    font-family: "Google Sans","Noto Sans Myanmar UI",arial,sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.3333;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 16px;
+    text-indent: -1px;
+    word-break: break-word;
+}
+
+/* card-header-subtext */
+.card-header .card-header-subtext {
+    color: #202124;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    line-height: 1.5;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 8px;
+}
+
+/* card-content */
+.card .card-content {
+    font-size: 0.1px;
+    margin: auto -24px;
+    white-space: nowrap;
+}
+
+@media (min-width: 450px) {
+    .card .card-content {
+        margin: auto -40px;
+    }
+}
+
+/* form-container */
+.card-content .form-container {
+    border-width: 0 24px;
+    border: 0px solid transparent;
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 14px;
+    padding: 24px 0px 0px;
+    vertical-align: top;
+    white-space: normal;
+    width: 100%;
+}
+
+@media (min-width: 450px) {
+    .card-content .form-container {
+        border-left-width: 40px;
+        border-right-width: 40px;
+    }
+}
+
+/* form-sub-container */
+@media (min-width: 901px) {
+    .form-container .form-sub-container {
+        flex-basis: 450px;
+        margin: 0px -48px;
+        overflow: hidden;
+        padding: 0px 48px;
+    }
+}
