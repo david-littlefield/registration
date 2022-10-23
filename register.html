@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Create your YouTube Account
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="./favicon.png">
+        <link rel="stylesheet" href="../../../public/stylesheets/fonts.css">
+        <link rel="stylesheet" href="../../../application/views/users/base.css">
+        <link rel="stylesheet" href="../../../application/views/users/logo.css">
+        <link rel="stylesheet" href="../../../application/views/users/card.css">
+        <link rel="stylesheet" href="../../../application/views/users/text-fields.css">
+        <link rel="stylesheet" href="../../../application/views/users/checkbox.css">
+        <link rel="stylesheet" href="../../../application/views/users/buttons.css">
+        <link rel="stylesheet" href="../../../application/views/users/aside.css">
+        <link rel="stylesheet" href="../../../application/views/users/footer.css">
+    </head>
+    <body>
+        <div class="main-container">
+            <div class="main-content">
+                <div class="columns-container">
+                    <div class="left-column">
+                        <div class="logo">
+                            <div class="logo-image">
+                                <img class="image" src="./youtubelogo_30.png" width="75" height="24">
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <h1 class="card-header-text">
+                                    Create your Google Account
+                                </h1>
+                                <div class="card-header-subtext">
+                                    to continue to YouTube
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="form-container">
+                                    <div class="form-sub-container">
+                                        <form action="../../index.js"  method="post" novalidate="">
+                                            <div class="empty-container">
+                                            </div>
+                                            <div class="text-fields-container">
+                                                <div id="first-and-last-name-text-fields" class="text-field-group">
+                                                    <div class="horizontal-container">
+                                                        <div class="animated-text-field-container">
+                                                            <div class="animated-text-field-sub-container">
+                                                                <div class="outer-text-field-container">
+                                                                    <div class="inner-text-field-container">
+                                                                        <div class="text-field-container">
+                                                                            <input id="first-name" class="text-field" type="text" autofocus autocomplete="off" spellcheck="false" name="user[firstName]" dir="ltr">
+                                                                            <div class="text-field-text">
+                                                                                First name
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="text-field-border-gray">
+                                                                        </div>
+                                                                        <div class="text-field-border-color">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="animated-text-field-container">
+                                                            <div class="animated-text-field-sub-container">
+                                                                <div class="outer-text-field-container">
+                                                                    <div class="inner-text-field-container">
+                                                                        <div class="text-field-container">
+                                                                            <input id="last-name" class="text-field" type="text" autocomplete="off" spellcheck="false" name="user[firstName]" dir="ltr">
+                                                                            <div class="text-field-text">
+                                                                                Last name
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="text-field-border-gray">
+                                                                        </div>
+                                                                        <div class="text-field-border-color">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text-field-feedback-container">
+                                                        <div class="text-field-error">
+                                                            <div class="text-field-error-image">
+                                                                <svg class="image" viewBox="0 0 24 24" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z">
+                                                                    </path>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="text-field-error-text">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="email-address-text-field" class="text-field-group">
+                                                    <div class="animated-text-field-container">
+                                                        <div class="animated-text-field-sub-container">
+                                                            <div class="outer-text-field-container">
+                                                                <div class="inner-text-field-container">
+                                                                    <div class="text-field-container">
+                                                                        <input id="email-address" class="text-field" type="email" autocomplete="off" spellcheck="false" name="user[email]" autocapitalize="none" dir="ltr">
+                                                                        <div class="text-field-text">
+                                                                            Your email address
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="text-field-border-gray">
+                                                                    </div>
+                                                                    <div class="text-field-border-color">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="text-field-feedback-container">
+                                                                <div class="text-field-hint">
+                                                                    <span class="text-field-hint-text">
+                                                                        You will need to confirm that this email belongs to you
+                                                                    </span>
+                                                                </div>
+                                                                <div class="text-field-error">
+                                                                    <div class="text-field-error-image">
+                                                                        <svg class="image" viewBox="0 0 24 24" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z">
+                                                                            </path>
+                                                                        </svg>
+                                                                    </div>
+                                                                    <div class="text-field-error-text">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="password-and-confirm-password-text-fields" class="text-field-group">
+                                                    <div class="horizontal-container">
+                                                        <div class="animated-text-field-container">
+                                                            <div class="animated-text-field-sub-container">
+                                                                <div class="outer-text-field-container">
+                                                                    <div class="inner-text-field-container">
+                                                                        <div class="text-field-container">
+                                                                            <input id="password" class="text-field" type="password" autocomplete="off" spellcheck="false" name="user[password]" autocapitalize="off" dir="ltr">
+                                                                            <div class="text-field-text">
+                                                                                Password
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="text-field-border-gray">
+                                                                        </div>
+                                                                        <div class="text-field-border-color">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="animated-text-field-container">
+                                                            <div class="animated-text-field-sub-container">
+                                                                <div class="outer-text-field-container">
+                                                                    <div class="inner-text-field-container">
+                                                                        <div class="text-field-container">
+                                                                            <input id="confirm-password" class="text-field" type="password" autocomplete="off" spellcheck="false" name="user[confirm-password]" autocapitalize="off" dir="ltr">
+                                                                            <div class="text-field-text">
+                                                                                Confirm
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="text-field-border-gray">
+                                                                        </div>
+                                                                        <div class="text-field-border-color">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text-field-feedback-container">
+                                                        <div class="text-field-hint">
+                                                            <div class="text-field-hint-text">
+                                                                Use 8 or more characters with a mix of letters, numbers &amp; symbols
+                                                            </div>
+                                                        </div>
+                                                        <div class="text-field-error">
+                                                            <div class="text-field-error-image">
+                                                                <svg class="image" viewBox="0 0 24 24" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z">
+                                                                    </path>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="text-field-error-text">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="show-password-checkbox">
+                                                        <div class="animated-checkbox-container">
+                                                            <div class="horizontal-container">
+                                                                <div class="checkbox-container">
+                                                                    <input class="checkbox" type="checkbox">
+                                                                    <div class="checkbox-image">
+                                                                        <svg class="image" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                                            <path fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59">
+                                                                            </path>
+                                                                        </svg>
+                                                                    </div>
+                                                                    <div class="checkbox-background">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="checkbox-label">
+                                                                    <div class="checkbox-label-text">
+                                                                        Show password
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div id="sign-in-and-next-button" class="buttons-container">
+                                        <div class="buttons-sub-container">
+                                            <div class="right-button-container">
+                                                <div class="right-button-container">
+                                                    <div class="next-button-container">
+                                                        <button class="next-button" type="button">
+                                                            <div class="next-button-background">
+                                                            </div>
+                                                            <span class="button-text">
+                                                                Next
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="left-button-container">
+                                                <div class="left-button-sub-container">
+                                                    <div class="sign-in-button-container">
+                                                        <button class="sign-in-button" type="button">
+                                                            <div class="sign-in-button-background">
+                                                            </div>
+                                                            <span class="button-text">
+                                                                Sign in instead
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-column">
+                        <div class="aside-container">
+                            <div class="aside">
+                                <div class="aside-image">
+                                    <img class="image" src="../../../public/images/register/account.svg" width="244" height="244">
+                                </div>
+                                <div class="aside-text">
+                                    One account. All of Google working for you.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="footer-drop-down-menu">
+                        <div class="drop-down-menu">
+                        </div>
+                    </div>
+                    <div class="footer-list">
+                        <ul class="list">
+                            <li class="list-item">
+                                <a class="link" href="https://support.google.com/accounts?hl=en&amp;p=account_iph" target="_blank">
+                                    Help
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a class="link" href="https://accounts.google.com/TOS?loc=US&amp;hl=en&amp;privacy=true" target="_blank">
+                                    Privacy
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a class="link" href="https://accounts.google.com/TOS?loc=US&amp;hl=en" target="_blank">
+                                    Terms
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="background">
+            </div>
+        </div>
+        <script src="register.js">
+        </script>
+    </body>
+</html>
