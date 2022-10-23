@@ -204,7 +204,7 @@ async function validateEmail() {
         showTextFieldError("#email-address", "Only these characters are allowed: letters, numbers, and some special characters.");
         return false;
     }
-    else if (!patternExistsInText(/[a-zA-Z0-9\-_.]+@[a-zA-Z0-9\-_.]+\.[a-zA-Z]/, emailAddress)) {
+    else if (!patternExistsInText(/[a-zA-Z0-9\-_.]+@[a-zA-Z0-9\-_.]+\.[a-zA-Z]+/, emailAddress)) {
         showTextFieldError("#email-address", "This email address is not valid.");
         return false;
     }
