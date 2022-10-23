@@ -322,15 +322,16 @@ function patternExistsInText(pattern = "", text = "") {
 }
 
 async function emailExistsInDatabase(emailAddress = "") {
-    return await fetch(`http://localhost:3000/users/check/${emailAddress}`)
-        .then(function(response) {
-            return response.json();
-        }).then(function(result) {
-        if (!result.emailExists) {
-            return false;
-        }
-        return true;
-        });
+    // return await fetch(`http://localhost:3000/users/check/${emailAddress}`)
+    //     .then(function(response) {
+    //         return response.json();
+    //     }).then(function(result) {
+    //     if (!result.emailExists) {
+    //         return false;
+    //     }
+    //     return true;
+    //     });
+    return false;
 }
 
 function clearTextFieldValue(selector = "") {
