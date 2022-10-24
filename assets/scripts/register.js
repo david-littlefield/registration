@@ -77,7 +77,7 @@ function addChangeEventToTextField() {
     const textField = document.querySelector("#email-address");
     if (textField) {
         textField.addEventListener("change", function(event) {
-            emailAddressIsValid();
+            validateEmail();
         });
     }
 }
